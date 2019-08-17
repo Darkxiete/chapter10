@@ -1,11 +1,9 @@
 //
-// Created by xk on 2019/8/17.
+// Created by summer on 2019-08-17.
 //
 
-#ifndef CHAPTER10_STOCK10_H
-#define CHAPTER10_STOCK10_H
-
-#include <string>
+#ifndef CHAPTER10_STACK20_H
+#define CHAPTER10_STACK20_H
 
 class Stock {
 private:
@@ -23,6 +21,6 @@ public:
     void update(double price);
     // promise not to change invoking object
     void show() const;
+    const Stock & topval(const Stock & s) const;
 };
-
-#endif //CHAPTER10_STOCK10_H
+#endif //CHAPTER10_STACK20_H

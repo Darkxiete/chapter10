@@ -1,9 +1,9 @@
 //
-// Created by xk on 2019/8/17.
+// Created by summer on 2019-08-17.
 //
 
 #include <iostream>
-#include "stock10.h"
+#include "stock20.h"
 
 using std::cout;
 using std::cin;
@@ -82,4 +82,11 @@ void Stock::show() const {
 
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
+}
+
+const Stock & Stock::topval(const Stock & s) const{
+    if (s.total_val > this->total_val)
+        return s;
+    else
+        return *this;
 }
