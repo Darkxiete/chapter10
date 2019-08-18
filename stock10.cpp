@@ -32,7 +32,7 @@ Stock::Stock(const std::string &co, long n, double pr) {
     }
 }
 
-Stock::~Stock(){
+Stock::~Stock() {
     cout << "Bye, " << company << "!\n";
 }
 
